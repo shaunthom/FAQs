@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(228, 219, 221);
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.FAQ-Box{
+    border-radius: 5px;
+    background-color: white;
+    width: 550px; 
+    height: 650px;
+    position: absolute;
+    top: -80px;
+    padding-right:20px;
+}  
+
+.star-img{
+    padding-left: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.heading{
+    position: absolute;
+    top: 18px;
+    color: purple;
+    font-weight: 700;
+    font-size: 34px;
+    text-align:justify;
+}
+
+.list-questions{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.list-question-style{
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.list-question-style:hover{
+    color: rgb(146, 19, 146);
+}
+
+.plus-icon{
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+}
+
+.collapsible-text {
+    display: none;
+    font-weight: 400;
+    color: rgb(100, 131, 131);
+}
+
+.collapsible-text :active{
+    display: block;
+}

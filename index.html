@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>FAQ accordion</title>
+  
+</head>
+<body>
+
+  <img src="assets/images/background-pattern-desktop.svg">
+
+  <div class="container">
+
+    <div class="FAQ-Box">
+
+      <img src="assets/images/icon-star.svg" class="star-img"><header class="heading" style="display: inline;">
+        FAQs
+      </header>
+
+      <ul class="list-questions">
+
+        <li class="list-question-style">
+          <span>Why do we travel?</span><img src="assets/images/icon-plus.svg" class="plus-icon">
+
+        <p class="collapsible-text">Traveling allows us to explore new cultures, meet different people, and gain experiences that enrich our lives. It broadens our perspectives and helps us grow both personally and professionally.</p></li>
+
+        <li class="list-question-style">Is solo travel a good idea?<img src="assets/images/icon-plus.svg" class="plus-icon">
+
+        <p class="collapsible-text">Solo travel can be a rewarding experience, offering you the freedom to explore at your own pace and the opportunity to discover more about yourself. It's a great way to build confidence and independence.</p></li>
+
+        <li class="list-question-style">What are the benefits of traveling?<img src="assets/images/icon-plus.svg" class="plus-icon">
+
+        <p class="collapsible-text">Traveling can reduce stress, enhance creativity, and provide a fresh perspective on life. It also helps in creating unforgettable memories and learning new things about the world and oneself.</p></li>
+
+        <li class="list-question-style"> How can I travel on a budget?<img src="assets/images/icon-plus.svg" class="plus-icon">
+
+        <p class="collapsible-text">Traveling on a budget is possible by planning ahead, booking flights during sales, staying in budget accommodations, and exploring free or low-cost attractions. Being flexible with your plans can also help save money.</p></li>
+
+
+      </ul>
+      
+      
+
+    </div>
+
+  </div>
+
+  <script>
+
+    let plusIcons  = document.getElementsByClassName('plus-icon');
+
+    for (let i = 0; i < plusIcons.length; i++){
+      plusIcons[i].addEventListener("click", function(){
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            this.src = "assets/images/icon-plus.svg"; 
+        } else {
+            content.style.display = "block";
+            this.src = "assets/images/icon-minus.svg"; 
+        }
+      })
+    }
+
+  </script>
+
+
+</body>
+</html>
